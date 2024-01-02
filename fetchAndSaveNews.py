@@ -22,8 +22,10 @@ def hit_api_and_save():
     except Exception as e:
         print(f"An error occurred: {e}")
 
+
+print("Server Running...")
 # Schedule the job to run every day at a specific time (change 'HH:MM' to your desired time)
-schedule.every().day.at('18:50').do(hit_api_and_save)
+schedule.every().day.at('13:45').do(hit_api_and_save)
 
 # Run the scheduling loop
 while True:
