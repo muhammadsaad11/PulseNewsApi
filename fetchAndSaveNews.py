@@ -25,9 +25,11 @@ def hit_api_and_save():
 
 print("Server Running...")
 # Schedule the job to run every day at a specific time (change 'HH:MM' to your desired time)
-schedule.every().day.at('13:45').do(hit_api_and_save)
+# schedule.every().day.at('13:45').do(hit_api_and_save)
 
-# Run the scheduling loop
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+# # Run the scheduling loop
+# while True:
+#     schedule.run_pending()
+#     time.sleep(1)
+
+hit_api_and_save()
