@@ -14,7 +14,7 @@ def hit_api_and_save():
         # Check if the request was successful (status code 200)
         if response.status_code == 200:
             # Save the response to a file (you can change the file name)
-            with open(f'response_news.json', 'w', encoding='utf-8') as file:
+            with open(f'response_news12.json', 'w', encoding='utf-8') as file:
                 file.write(response.text)
             print(f"API request successful at {datetime.now()}")
         else:
