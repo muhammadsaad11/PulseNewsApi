@@ -7,11 +7,12 @@ export default async (req: Request) => {
           method: 'POST'
         }).then((response) => {
           console.log('Build hook response:', response.json())
+          console.log("Received event! Next invocation at:", next_run)
         })
       
         return {
           statusCode: 200
         }
 
-    console.log("Received event! Next invocation at:", next_run)
+    
 }
