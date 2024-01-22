@@ -5,7 +5,9 @@ from datetime import datetime
 
 def hit_api_and_save():
     # Replace 'YOUR_API_ENDPOINT' with the actual API endpoint you want to hit
-    api_url = 'https://newsapi.org/v2/everything?q=technology+OR+AI+OR+startup+OR+Silicon+Valley&sortBy=popularity&apiKey=e8f37b515ebb44d9a0b038c6e3c19361'
+    # api_url = 'https://newsapi.org/v2/everything?q=technology+OR+AI+OR+startup+OR+Silicon+Valley&sortBy=popularity&apiKey=e8f37b515ebb44d9a0b038c6e3c19361'
+
+    api_url = 'https://newsapi.org/v2/everything?q=technology&sortBy=popularity&apiKey=e8f37b515ebb44d9a0b038c6e3c19361'
     
     try:
         # Make the GET request
