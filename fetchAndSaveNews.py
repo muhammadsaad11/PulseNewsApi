@@ -11,7 +11,9 @@ def hit_api_and_save():
     # api_url = 'https://newsapi.org/v2/everything?q=technology&sortBy=popularity&apiKey=e8f37b515ebb44d9a0b038c6e3c19361'
 
 
-    api_url = 'https://newsapi.org/v2/top-headlines?category=technology&country=us&apiKey=e8f37b515ebb44d9a0b038c6e3c19361'
+    # api_url = 'https://newsapi.org/v2/top-headlines?category=technology&country=us&apiKey=e8f37b515ebb44d9a0b038c6e3c19361'
+
+    api_url = 'https://newsapi.org/v2/everything?q=tech&sortBy=publishedAt&apiKey=e8f37b515ebb44d9a0b038c6e3c19361'
     
     try:
         # Make the GET request
